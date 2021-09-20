@@ -19,11 +19,6 @@
     </form>
     <input type="submit" id="loginExec" value="Entrar" style="margin-top:-47px">
 
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" href="#">Esqueceu a senha?</a>
-    </div>
-
   </div>
 </div>
 

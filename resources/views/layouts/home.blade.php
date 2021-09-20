@@ -1,4 +1,5 @@
 @extends('main')
+
 <script rel="stylesheet" src="assets/js/jquery-3.6.0.min.js"></script>
 
 <div>
@@ -236,12 +237,7 @@
       },
       error: function(data) 
       {
-        Swal.fire({
-          title: 'Ops!',
-          text: 'Não foi possível carregar os livros.',
-          icon: 'error',
-          confirmButtonText: 'OK'
-        })
+        window.location.href = "/";
       }
     });
   }
@@ -345,15 +341,7 @@
       },
       error: function(data) 
       {
-        if(data.status == 401)
-        {
-          Swal.fire({
-            title: 'Ops!',
-            text: 'Tente novamente mais tarde.',
-            icon: 'error',
-            confirmButtonText: 'OK'
-          })
-        }
+        window.location.href = "/";
       }
     });
   });   
@@ -518,4 +506,6 @@
   });
 
 </script>
+
+
 
